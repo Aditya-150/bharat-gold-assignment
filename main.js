@@ -149,11 +149,11 @@ function convertCamelCaseToWords(str) {
 }
 
 const images = [
-  "jewellery-image1.jpg",
-  "jewellery-image2.jpg",
-  "jewellery-image3.jpg",
-  "jewellery-image4.jpg",
-  "jewellery-image5.jpg",
+  "/jewellery-image1.jpg",
+  "/jewellery-image2.jpg",
+  "/jewellery-image3.jpg",
+  "/jewellery-image4.jpg",
+  "/jewellery-image5.jpg",
 ];
 let currentImageIndex = 0;
 
