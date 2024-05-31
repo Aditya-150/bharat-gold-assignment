@@ -1,5 +1,23 @@
 # Bharat Gold Assignment
 
+## Development Guide
+
+Fork the repository in order create a branch under your GitHub account.
+
+Clone the repository for local development.
+```
+git clone https://github.com/<GitHub-Username>/bharat-gold-assignment.git
+
+cd bharat-gold-assignment
+```
+
+```markdown
+npm install -g pnpm // Install pnpm globally
+
+pnpm install // In order to install node modules
+```
+
+
 ## Assignment Description
 
 To develop an interactive web form that collects basic user information for a personalized jewellery customization process. This will help us understand your proficiency in HTML, CSS, and JavaScript.
