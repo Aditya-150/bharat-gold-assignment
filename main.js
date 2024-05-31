@@ -18,7 +18,7 @@ document
 document
   .getElementById("customizationForm")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault();
 
     const form = event.target;
     const formData = new FormData(form);
@@ -36,7 +36,6 @@ document
       const fieldElements = form.elements[field];
       if (fieldElements) {
         if (fieldElements.length && fieldElements[0].type === "radio") {
-          // This handles radio button groups
           const isChecked = Array.from(fieldElements).some(
             (element) => element.checked
           );
@@ -110,7 +109,7 @@ function showToast(message, isSuccess) {
 
   setTimeout(() => {
     toast.className = toast.className.replace("show", "");
-  }, 10000); 
+  }, 10000);
 }
 
 function downloadPDF() {
@@ -148,3 +147,29 @@ function downloadPDF() {
 function convertCamelCaseToWords(str) {
   return str.replace(/([A-Z])/g, " $1").trim();
 }
+
+const images = [
+  "jewellery-image1.jpg",
+  "jewellery-image2.jpg",
+  "jewellery-image3.jpg",
+  "jewellery-image4.jpg",
+  "jewellery-image5.jpg",
+];
+let currentImageIndex = 0;
+
+function changeImage() {
+  const imageElement = document.getElementById("mainImage");
+  imageElement.classList.remove("active");
+
+  setTimeout(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    imageElement.src = images[currentImageIndex];
+    imageElement.classList.add("active");
+  }, 1000);
+}
+
+setInterval(changeImage, 5000);
+document.addEventListener("DOMContentLoaded", () => {
+  const imageElement = document.getElementById("mainImage");
+  imageElement.classList.add("active");
+});

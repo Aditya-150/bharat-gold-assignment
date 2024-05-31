@@ -1,80 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewellery Customization Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="form-container">
-        <h1>Jewellery Customization Form</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Gold Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <img src="jewellery-image0.jpg" alt="Jewellery Image" id="mainImage" />
+      </div>
+      <div class="form-container">
+        <h1>Jewellery Choice Form</h1>
         <form id="customizationForm">
-            <label for="occasion">Occasion</label>
-            <select id="occasion" name="occasion" required>
-                <option value="">Select an occasion</option>
-                <option value="engagement">Engagement</option>
-                <option value="anniversary">Anniversary</option>
-                <option value="birthday">Birthday</option>
-                <option value="daily-wear">Daily-wear</option>
-            </select>
+          <label for="occasion">Occasion</label>
+          <select id="occasion" name="occasion" required>
+            <option value="">Select an occasion</option>
+            <option value="engagement">Engagement</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="birthday">Birthday</option>
+            <option value="daily-wear">Daily-wear</option>
+          </select>
 
-            <fieldset>
-                <legend>Gift or Personal Purchase</legend>
-                <label><input type="radio" name="purchaseType" value="gift" required> Gift</label>
-                <label><input type="radio" name="purchaseType" value="personal" required> Personal</label>
-            </fieldset>
+          <fieldset>
+            <legend>Gift or Personal Purchase</legend>
+            <label
+              ><input type="radio" name="purchaseType" value="gift" required />
+              Gift</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="purchaseType"
+                value="personal"
+                required
+              />
+              Personal</label
+            >
+          </fieldset>
 
-            <fieldset>
-                <legend>Gender</legend>
-                <label><input type="radio" name="gender" value="male" required> Male</label>
-                <label><input type="radio" name="gender" value="female" required> Female</label>
-                <label><input type="radio" name="gender" value="other" required> Other</label>
-            </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" required />
+              Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="other" required />
+              Other</label
+            >
+          </fieldset>
 
-            <fieldset>
-                <legend>Age Group</legend>
-                <label><input type="radio" name="ageGroup" value="under18" required> Under 18</label>
-                <label><input type="radio" name="ageGroup" value="18-25" required> 18-25</label>
-                <label><input type="radio" name="ageGroup" value="26-35" required> 26-35</label>
-                <label><input type="radio" name="ageGroup" value="36-50" required> 36-50</label>
-                <label><input type="radio" name="ageGroup" value="50+" required> 50+</label>
-            </fieldset>
+          <fieldset>
+            <legend>Age Group</legend>
+            <label
+              ><input type="radio" name="ageGroup" value="under18" required />
+              Under 18</label
+            >
+            <label
+              ><input type="radio" name="ageGroup" value="18-25" required />
+              18-25</label
+            >
+            <label
+              ><input type="radio" name="ageGroup" value="26-35" required />
+              26-35</label
+            >
+            <label
+              ><input type="radio" name="ageGroup" value="36-50" required />
+              36-50</label
+            >
+            <label
+              ><input type="radio" name="ageGroup" value="50+" required />
+              50+</label
+            >
+          </fieldset>
 
-            <label for="religion">Religion (optional)</label>
-            <input type="text" id="religion" name="religion">
+          <label for="religion">Religion (optional)</label>
+          <input type="text" id="religion" name="religion" />
 
-            <fieldset>
-                <legend>Type of Jewellery</legend>
-                <label><input type="checkbox" name="jewelleryType" value="rings"> Rings</label>
-                <label><input type="checkbox" name="jewelleryType" value="necklaces"> Necklaces</label>
-                <label><input type="checkbox" name="jewelleryType" value="pendants"> Pendants</label>
-                <label><input type="checkbox" name="jewelleryType" value="earrings"> Earrings</label>
-            </fieldset>
+          <fieldset>
+            <legend>Type of Jewellery</legend>
+            <label
+              ><input type="checkbox" name="jewelleryType" value="rings" />
+              Rings</label
+            >
+            <label
+              ><input type="checkbox" name="jewelleryType" value="necklaces" />
+              Necklaces</label
+            >
+            <label
+              ><input type="checkbox" name="jewelleryType" value="pendants" />
+              Pendants</label
+            >
+            <label
+              ><input type="checkbox" name="jewelleryType" value="earrings" />
+              Earrings</label
+            >
+          </fieldset>
 
-            <label for="budget">Budget</label>
-            <select id="budget" name="budget" required>
-                <option value="">Select a budget</option>
-                <option value="under5000">Under ₹5000</option>
-                <option value="5000-10000">₹5000 - ₹10000</option>
-                <option value="10000-20000">₹10000 - ₹20000</option>
-                <option value="20000+">₹20000+</option>
-            </select>
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget" required>
+            <option value="">Select a budget</option>
+            <option value="under5000">Under ₹5000</option>
+            <option value="5000-10000">₹5000 - ₹10000</option>
+            <option value="10000-20000">₹10000 - ₹20000</option>
+            <option value="20000+">₹20000+</option>
+          </select>
 
-            <label for="outfitImage">Match with an outfit (optional)</label>
-            <input type="file" id="outfitImage" name="outfitImage" accept="image/*">
-            <img id="outfitPreview" src="#" alt="Outfit Preview" style="display:none;"/>
+          <label for="outfitImage">Match with an outfit (optional)</label>
+          <input
+            type="file"
+            id="outfitImage"
+            name="outfitImage"
+            accept="image/*"
+          />
+          <img
+            id="outfitPreview"
+            src="#"
+            alt="Outfit Preview"
+            style="display: none"
+          />
 
-            <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </form>
+      </div>
     </div>
     <div id="toast" class="toast">
-        <span id="toastMessage"></span>
-        <button id="downloadBtn" style="display:none;">Download PDF</button>
-        <button id="closeToast">✖</button>
+      <button id="closeToast">✖</button>
+      <div class="toast-content">
+        <div id="toastMessage"></div>
+        <button id="downloadBtn" style="display: none">Download PDF</button>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
